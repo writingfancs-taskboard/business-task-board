@@ -72,17 +72,31 @@ ed26288 - Fix: Update Dockerfile to use Railway PORT environment variable
 
 ## 📌 QUICK REFERENCE (Always available)
 
+### Task Board 📊
 | Item | Details |
 |------|---------|
 | **Live Board** | https://writingfancs-taskboard.github.io/business-task-board/ |
-| **Password** | TaskBoard@2026Pro |
-| **Hosting** | GitHub Pages |
 | **Repository** | https://github.com/writingfancs-taskboard/business-task-board |
+| **Password** | TaskBoard@2026Pro |
+
+### Content Pipeline 📝
+| Item | Details |
+|------|---------|
+| **Live Pipeline** | https://writingfancs-taskboard.github.io/content-pipeline/ |
+| **Repository** | https://github.com/writingfancs-taskboard/content-pipeline |
+| **Password** | TaskBoard@2026Pro |
+| **Content Types** | Blog Posts, YouTube Videos, Instagram Reels, TikTok Videos |
+| **Pipeline Stages** | Idea → Research → Draft → Assets → Review → Published |
+
+### Both Tools
+| Item | Details |
+|------|---------|
+| **Hosting** | GitHub Pages (Free) |
 | **Language** | Arabic (عربي) + RTL |
 | **Update Cycle** | ~30 seconds (auto via GitHub Pages) |
-| **Manual Updates** | See HEARTBEAT.md or Daily Update Process section |
+| **Authentication** | Session-based with password |
 
 ---
 
 **Last Updated:** March 2, 2026
-**Status:** Ready for daily task tracking and management
+**Status:** Both Task Board and Content Pipeline ready for production use
