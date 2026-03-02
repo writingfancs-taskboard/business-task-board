@@ -88,13 +88,22 @@ ed26288 - Fix: Update Dockerfile to use Railway PORT environment variable
 | **Content Types** | Blog Posts, YouTube Videos, Instagram Reels, TikTok Videos |
 | **Pipeline Stages** | Idea → Research → Draft → Assets → Review → Published |
 
-### Both Tools
+### Memory Bank 🧠
+| Item | Details |
+|------|---------|
+| **Live Memory Bank** | https://writingfancs-taskboard.github.io/memory-bank/ |
+| **Repository** | https://github.com/writingfancs-taskboard/memory-bank |
+| **Password** | TaskBoard@2026Pro |
+| **Categories** | Business Decisions, Client Info, Content Ideas, Technical Notes, Personal Preferences |
+
+### All Three Tools
 | Item | Details |
 |------|---------|
 | **Hosting** | GitHub Pages (Free) |
 | **Language** | Arabic (عربي) + RTL |
 | **Update Cycle** | ~30 seconds (auto via GitHub Pages) |
 | **Authentication** | Session-based with password |
+| **Auto-Save** | AI saves important conversation info to Memory Bank |
 
 ---
 
@@ -105,14 +114,17 @@ ed26288 - Fix: Update Dockerfile to use Railway PORT environment variable
 ### What You Have:
 ✅ **Task Board** - For business task tracking (6 tasks loaded)
 ✅ **Content Pipeline** - For content management (5 pieces loaded)
+✅ **Memory Bank** - For knowledge & decision storage (5 memories loaded)
 ✅ **GitHub Integration** - Auto-updating via GitHub Pages
-✅ **Arabic Interface** - Both tools fully in Arabic (RTL)
-✅ **Same Security** - Both use TaskBoard@2026Pro
+✅ **Arabic Interface** - All tools fully in Arabic (RTL)
+✅ **Same Security** - All use TaskBoard@2026Pro
 ✅ **Free Hosting** - GitHub Pages (no monthly costs)
+✅ **Auto-Save Feature** - I save important info from conversations automatically
 
 ### Quick Links:
 - Task Board: https://writingfancs-taskboard.github.io/business-task-board/
 - Content Pipeline: https://writingfancs-taskboard.github.io/content-pipeline/
+- Memory Bank: https://writingfancs-taskboard.github.io/memory-bank/
 - GitHub Account: writingfancs-taskboard
 - Email: Writingfancs@gmail.com
 
@@ -133,4 +145,4 @@ git push origin main
 ---
 
 **Last Updated:** March 2, 2026
-**Status:** ✅ PRODUCTION READY - Both Tools Live & Integrated
+**Status:** ✅ PRODUCTION READY - Three Integrated Tools Live (Task Board + Content Pipeline + Memory Bank)
