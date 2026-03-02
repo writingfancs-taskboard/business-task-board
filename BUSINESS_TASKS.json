@@ -1,0 +1,183 @@
+{
+  "projects": [
+    {
+      "id": "PROJ-MARKETING",
+      "name": "Marketing & Content",
+      "color": "#FF6B6B",
+      "description": "Content creation, publishing, and marketing campaigns"
+    },
+    {
+      "id": "PROJ-TECH",
+      "name": "Tech / Software",
+      "color": "#4ECDC4",
+      "description": "Software development, integrations, and technical projects"
+    },
+    {
+      "id": "PROJ-CONSULTING",
+      "name": "Consulting / Services",
+      "color": "#FFE66D",
+      "description": "Client projects, service delivery, and consulting work"
+    }
+  ],
+  "taskTypes": [
+    "Client communication & follow-ups",
+    "Content creation & publishing",
+    "Reports & analysis",
+    "Vendor & partner outreach"
+  ],
+  "columns": {
+    "backlog": {
+      "name": "Backlog",
+      "order": 1
+    },
+    "inProgress": {
+      "name": "In Progress",
+      "order": 2
+    },
+    "review": {
+      "name": "Review",
+      "order": 3
+    },
+    "done": {
+      "name": "Done",
+      "order": 4
+    }
+  },
+  "tasks": [
+    {
+      "id": "TASK-2026-001",
+      "title": "Weekly Client Check-in Call",
+      "description": "Scheduled call with [Client Name] to discuss project progress and address any blockers",
+      "type": "Client communication & follow-ups",
+      "project": "PROJ-CONSULTING",
+      "status": "inProgress",
+      "assignedTo": "user",
+      "priority": "high",
+      "dueDate": "2026-03-03T14:00:00Z",
+      "recurring": {
+        "isRecurring": true,
+        "frequency": "weekly",
+        "dayOfWeek": "Tuesday"
+      },
+      "createdAt": "2026-03-02T09:30:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "notes": "Come prepared with progress report"
+    },
+    {
+      "id": "TASK-2026-002",
+      "title": "Blog Post: Q1 Industry Trends",
+      "description": "Write and publish comprehensive blog post covering Q1 2026 tech and marketing trends. Target: 2000+ words, SEO optimized",
+      "type": "Content creation & publishing",
+      "project": "PROJ-MARKETING",
+      "status": "inProgress",
+      "assignedTo": "agent",
+      "priority": "high",
+      "dueDate": "2026-03-07T17:00:00Z",
+      "recurring": {
+        "isRecurring": false,
+        "frequency": null
+      },
+      "createdAt": "2026-03-02T09:30:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "notes": "Use data from recent reports. Include 5+ credible sources",
+      "automationSuggestion": null
+    },
+    {
+      "id": "TASK-2026-003",
+      "title": "Monthly Analytics Report",
+      "description": "Generate and distribute monthly performance reports covering: website traffic, lead conversions, content performance, client metrics",
+      "type": "Reports & analysis",
+      "project": "PROJ-MARKETING",
+      "status": "backlog",
+      "assignedTo": "agent",
+      "priority": "medium",
+      "dueDate": "2026-03-31T17:00:00Z",
+      "recurring": {
+        "isRecurring": true,
+        "frequency": "monthly",
+        "dayOfMonth": 31
+      },
+      "createdAt": "2026-03-02T09:30:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "notes": "Include YoY comparisons and actionable insights",
+      "automationSuggestion": "✅ Can be automated with scheduled cron task to generate + email reports monthly"
+    },
+    {
+      "id": "TASK-2026-004",
+      "title": "Follow-up: Vendor Proposal Review",
+      "description": "Review and respond to [Vendor Name]'s proposal for API integration. Negotiate terms if needed.",
+      "type": "Vendor & partner outreach",
+      "project": "PROJ-TECH",
+      "status": "review",
+      "assignedTo": "user",
+      "priority": "high",
+      "dueDate": "2026-03-04T12:00:00Z",
+      "recurring": {
+        "isRecurring": false,
+        "frequency": null
+      },
+      "createdAt": "2026-03-02T09:30:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "notes": "Compare against [Competitor] pricing"
+    },
+    {
+      "id": "TASK-2026-005",
+      "title": "Client Onboarding Documentation",
+      "description": "Create comprehensive onboarding guide and setup documentation for new consulting client",
+      "type": "Client communication & follow-ups",
+      "project": "PROJ-CONSULTING",
+      "status": "done",
+      "assignedTo": "agent",
+      "priority": "high",
+      "dueDate": "2026-03-01T17:00:00Z",
+      "recurring": {
+        "isRecurring": false,
+        "frequency": null
+      },
+      "createdAt": "2026-02-28T14:00:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "completedAt": "2026-03-01T16:30:00Z",
+      "notes": "Include setup video walkthrough"
+    },
+    {
+      "id": "TASK-2026-006",
+      "title": "Social Media Content Calendar",
+      "description": "Plan and schedule 4 weeks of social media content across LinkedIn, Twitter, and Instagram",
+      "type": "Content creation & publishing",
+      "project": "PROJ-MARKETING",
+      "status": "backlog",
+      "assignedTo": "agent",
+      "priority": "medium",
+      "dueDate": "2026-03-14T17:00:00Z",
+      "recurring": {
+        "isRecurring": true,
+        "frequency": "monthly"
+      },
+      "createdAt": "2026-03-02T09:30:00Z",
+      "updatedAt": "2026-03-02T09:30:00Z",
+      "notes": "Mix promotional, educational, and engagement content (60/20/20 split)",
+      "automationSuggestion": "✅ Can be automated: once created, schedule publishing via Buffer/Later every month"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-03-02T09:30:00Z",
+    "totalTasks": 6,
+    "tasksByStatus": {
+      "backlog": 2,
+      "inProgress": 2,
+      "review": 1,
+      "done": 1
+    },
+    "tasksByAssignee": {
+      "user": 2,
+      "agent": 4
+    },
+    "tasksByPriority": {
+      "high": 4,
+      "medium": 2,
+      "low": 0
+    },
+    "recurringTasks": 3,
+    "automationOpportunities": 2
+  }
+}
