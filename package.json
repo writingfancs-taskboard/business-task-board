@@ -2,10 +2,10 @@
   "name": "business-task-board",
   "version": "1.0.0",
   "description": "A beautiful real-time Kanban board for managing business tasks",
-  "main": "taskboard.html",
+  "main": "server.js",
   "scripts": {
-    "start": "python3 -m http.server 8000",
-    "serve": "python3 -m http.server 3000"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [
     "task-board",
@@ -16,7 +16,7 @@
   "author": "Writingfancs",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0",
-    "python": ">=3.6"
-  }
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
 }

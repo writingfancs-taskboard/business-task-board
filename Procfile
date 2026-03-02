@@ -1,1 +1,1 @@
-web: python3 -m http.server 8000
+web: node server.js
