@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <script>
         // Check authentication before page loads
@@ -9,7 +9,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Task Board</title>
+    <title>لوحة المهام</title>
     <style>
         * {
             margin: 0;
@@ -471,62 +471,62 @@
         <!-- Header -->
         <div class="header">
             <div class="header-left">
-                <h1>📊 Business Task Board</h1>
+                <h1>📊 لوحة المهام</h1>
             <div class="header-stats" id="stats">
                 <div class="stat">
                     <div class="stat-value">0</div>
-                    <div class="stat-label">Total Tasks</div>
+                    <div class="stat-label">إجمالي المهام</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">0</div>
-                    <div class="stat-label">In Progress</div>
+                    <div class="stat-label">قيد التنفيذ</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">0</div>
-                    <div class="stat-label">High Priority</div>
+                    <div class="stat-label">أولوية عالية</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">0</div>
-                    <div class="stat-label">Recurring</div>
+                    <div class="stat-label">متكررة</div>
                 </div>
             </div>
                 <div class="controls">
                     <div class="filter-group" id="filterGroup">
-                        <button class="filter-btn active" data-filter="all">All Tasks</button>
-                        <button class="filter-btn" data-filter="user">My Tasks</button>
-                        <button class="filter-btn" data-filter="agent">AI Tasks</button>
-                        <button class="filter-btn" data-filter="high">High Priority</button>
+                        <button class="filter-btn active" data-filter="all">جميع المهام</button>
+                        <button class="filter-btn" data-filter="user">مهامي</button>
+                        <button class="filter-btn" data-filter="agent">مهام الذكاء الاصطناعي</button>
+                        <button class="filter-btn" data-filter="high">أولوية عالية</button>
                     </div>
                 </div>
             </div>
-            <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+            <button class="logout-btn" onclick="logout()">🚪 تسجيل الخروج</button>
         </div>
 
         <!-- Projects Overview -->
         <div class="sidebar">
-            <div class="sidebar-title">📁 Projects</div>
+            <div class="sidebar-title">📁 المشاريع</div>
             <div class="projects-grid" id="projectsGrid"></div>
         </div>
 
         <!-- Legend -->
         <div class="sidebar">
-            <div class="sidebar-title">🎨 Legend</div>
+            <div class="sidebar-title">🎨 الوسيلة التوضيحية</div>
             <div class="legend">
                 <div class="legend-item">
                     <div class="legend-color" style="background: #FF6B6B;"></div>
-                    <span class="legend-label">High Priority</span>
+                    <span class="legend-label">أولوية عالية</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #FFA500;"></div>
-                    <span class="legend-label">Medium Priority</span>
+                    <span class="legend-label">أولوية متوسطة</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #4ECDC4;"></div>
-                    <span class="legend-label">Low Priority</span>
+                    <span class="legend-label">أولوية منخفضة</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #FFE66D;"></div>
-                    <span class="legend-label">Recurring Task</span>
+                    <span class="legend-label">مهمة متكررة</span>
                 </div>
             </div>
         </div>
@@ -538,7 +538,7 @@
     <script>
         // Logout function
         function logout() {
-            if (confirm('Are you sure you want to logout?')) {
+            if (confirm('هل أنت متأكد أنك تريد تسجيل الخروج؟')) {
                 sessionStorage.removeItem('boardAuth');
                 window.location.href = 'index.html';
             }
@@ -563,7 +563,7 @@
                 document.getElementById('board').innerHTML = `
                     <div class="empty-state" style="grid-column: 1/-1;">
                         <div class="empty-state-icon">⚠️</div>
-                        <p>Error loading task data. Please check the server is running.</p>
+                        <p>خطأ في تحميل بيانات المهام. يرجى التحقق من أن الخادم يعمل.</p>
                     </div>
                 `;
             }
@@ -576,10 +576,10 @@
 
             const columns = ['backlog', 'inProgress', 'review', 'done'];
             const columnNames = {
-                backlog: 'Backlog',
-                inProgress: 'In Progress',
-                review: 'Review',
-                done: 'Done'
+                backlog: 'المخزن المؤقت',
+                inProgress: 'قيد التنفيذ',
+                review: 'مراجعة',
+                done: 'مكتملة'
             };
 
             columns.forEach(column => {
@@ -601,7 +601,7 @@
                     tasksContainer.innerHTML = `
                         <div class="empty-state">
                             <div class="empty-state-icon">→</div>
-                            <p style="font-size: 13px;">No tasks</p>
+                            <p style="font-size: 13px;">لا توجد مهام</p>
                         </div>
                     `;
                 } else {

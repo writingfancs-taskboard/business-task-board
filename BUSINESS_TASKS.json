@@ -2,91 +2,89 @@
   "projects": [
     {
       "id": "PROJ-MARKETING",
-      "name": "Marketing & Content",
+      "name": "التسويق والمحتوى",
       "color": "#FF6B6B",
-      "description": "Content creation, publishing, and marketing campaigns"
+      "description": "إنشاء المحتوى والنشر والحملات التسويقية"
     },
     {
       "id": "PROJ-TECH",
-      "name": "Tech / Software",
+      "name": "التكنولوجيا والبرمجيات",
       "color": "#4ECDC4",
-      "description": "Software development, integrations, and technical projects"
+      "description": "تطوير البرامج والتكاملات والمشاريع التقنية"
     },
     {
       "id": "PROJ-CONSULTING",
-      "name": "Consulting / Services",
+      "name": "الاستشارات والخدمات",
       "color": "#FFE66D",
-      "description": "Client projects, service delivery, and consulting work"
+      "description": "مشاريع العملاء وتقديم الخدمات والعمل الاستشاري"
     }
   ],
   "taskTypes": [
-    "Client communication & follow-ups",
-    "Content creation & publishing",
-    "Reports & analysis",
-    "Vendor & partner outreach"
+    "التواصل مع العملاء والمتابعة",
+    "إنشاء وتطوير المحتوى",
+    "التقارير والتحليلات",
+    "التواصل مع الموردين والشركاء"
   ],
   "columns": {
     "backlog": {
-      "name": "Backlog",
+      "name": "المخزن المؤقت",
       "order": 1
     },
     "inProgress": {
-      "name": "In Progress",
+      "name": "قيد التنفيذ",
       "order": 2
     },
     "review": {
-      "name": "Review",
+      "name": "مراجعة",
       "order": 3
     },
     "done": {
-      "name": "Done",
+      "name": "مكتملة",
       "order": 4
     }
   },
   "tasks": [
     {
       "id": "TASK-2026-001",
-      "title": "Weekly Client Check-in Call",
-      "description": "Scheduled call with [Client Name] to discuss project progress and address any blockers",
-      "type": "Client communication & follow-ups",
-      "project": "PROJ-CONSULTING",
+      "title": "تحديث بيانات الموقع",
+      "description": "تحديث المعلومات الأساسية والبيانات الوصفية للموقع الإلكتروني",
+      "type": "إنشاء وتطوير المحتوى",
+      "project": "PROJ-MARKETING",
       "status": "inProgress",
       "assignedTo": "user",
       "priority": "high",
-      "dueDate": "2026-03-03T14:00:00Z",
-      "recurring": {
-        "isRecurring": true,
-        "frequency": "weekly",
-        "dayOfWeek": "Tuesday"
-      },
-      "createdAt": "2026-03-02T09:30:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "notes": "Come prepared with progress report"
-    },
-    {
-      "id": "TASK-2026-002",
-      "title": "Blog Post: Q1 Industry Trends",
-      "description": "Write and publish comprehensive blog post covering Q1 2026 tech and marketing trends. Target: 2000+ words, SEO optimized",
-      "type": "Content creation & publishing",
-      "project": "PROJ-MARKETING",
-      "status": "inProgress",
-      "assignedTo": "agent",
-      "priority": "high",
-      "dueDate": "2026-03-07T17:00:00Z",
+      "dueDate": "2026-03-05T17:00:00Z",
       "recurring": {
         "isRecurring": false,
         "frequency": null
       },
-      "createdAt": "2026-03-02T09:30:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "notes": "Use data from recent reports. Include 5+ credible sources",
-      "automationSuggestion": null
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "تأكد من تحديث جميع الصور والروابط"
+    },
+    {
+      "id": "TASK-2026-002",
+      "title": "مراجعة عقد عميل جديد",
+      "description": "مراجعة ومناقشة شروط العقد مع العميل الجديد",
+      "type": "التواصل مع العملاء والمتابعة",
+      "project": "PROJ-CONSULTING",
+      "status": "review",
+      "assignedTo": "user",
+      "priority": "high",
+      "dueDate": "2026-03-04T12:00:00Z",
+      "recurring": {
+        "isRecurring": false,
+        "frequency": null
+      },
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "التأكد من توافق جميع الشروط مع السياسة العامة"
     },
     {
       "id": "TASK-2026-003",
-      "title": "Monthly Analytics Report",
-      "description": "Generate and distribute monthly performance reports covering: website traffic, lead conversions, content performance, client metrics",
-      "type": "Reports & analysis",
+      "title": "إعداد تقرير الأداء الشهري",
+      "description": "جمع وتحليل البيانات لإعداد تقرير شامل عن الأداء الشهري",
+      "type": "التقارير والتحليلات",
       "project": "PROJ-MARKETING",
       "status": "backlog",
       "assignedTo": "agent",
@@ -97,84 +95,87 @@
         "frequency": "monthly",
         "dayOfMonth": 31
       },
-      "createdAt": "2026-03-02T09:30:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "notes": "Include YoY comparisons and actionable insights",
-      "automationSuggestion": "✅ Can be automated with scheduled cron task to generate + email reports monthly"
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "تضمين المقارنات السنوية والرؤى القابلة للتطبيق",
+      "automationSuggestion": "✅ يمكن أتمتة هذا - إنشاء تقرير شهري تلقائي عبر مهمة مجدولة"
     },
     {
       "id": "TASK-2026-004",
-      "title": "Follow-up: Vendor Proposal Review",
-      "description": "Review and respond to [Vendor Name]'s proposal for API integration. Negotiate terms if needed.",
-      "type": "Vendor & partner outreach",
+      "title": "متابعة عرض أسعار المورد",
+      "description": "التحقق والرد على عرض الأسعار من مورد التكنولوجيا",
+      "type": "التواصل مع الموردين والشركاء",
       "project": "PROJ-TECH",
-      "status": "review",
+      "status": "backlog",
       "assignedTo": "user",
-      "priority": "high",
-      "dueDate": "2026-03-04T12:00:00Z",
+      "priority": "medium",
+      "dueDate": "2026-03-06T14:00:00Z",
       "recurring": {
         "isRecurring": false,
         "frequency": null
       },
-      "createdAt": "2026-03-02T09:30:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "notes": "Compare against [Competitor] pricing"
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "مقارنة مع العروض الأخرى المتاحة"
     },
     {
       "id": "TASK-2026-005",
-      "title": "Client Onboarding Documentation",
-      "description": "Create comprehensive onboarding guide and setup documentation for new consulting client",
-      "type": "Client communication & follow-ups",
-      "project": "PROJ-CONSULTING",
-      "status": "done",
+      "title": "تنسيق محتوى وسائل التواصل",
+      "description": "إنشاء وجدولة محتوى وسائل التواصل الاجتماعي للأسبوع القادم",
+      "type": "إنشاء وتطوير المحتوى",
+      "project": "PROJ-MARKETING",
+      "status": "inProgress",
       "assignedTo": "agent",
-      "priority": "high",
-      "dueDate": "2026-03-01T17:00:00Z",
+      "priority": "medium",
+      "dueDate": "2026-03-07T18:00:00Z",
       "recurring": {
-        "isRecurring": false,
-        "frequency": null
+        "isRecurring": true,
+        "frequency": "weekly"
       },
-      "createdAt": "2026-02-28T14:00:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "completedAt": "2026-03-01T16:30:00Z",
-      "notes": "Include setup video walkthrough"
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "مزيج من المحتوى الترويجي والتعليمي والتفاعلي",
+      "automationSuggestion": "✅ يمكن أتمتة - جدولة النشر أسبوعياً عبر Buffer/Later"
     },
     {
       "id": "TASK-2026-006",
-      "title": "Social Media Content Calendar",
-      "description": "Plan and schedule 4 weeks of social media content across LinkedIn, Twitter, and Instagram",
-      "type": "Content creation & publishing",
-      "project": "PROJ-MARKETING",
-      "status": "backlog",
-      "assignedTo": "agent",
-      "priority": "medium",
-      "dueDate": "2026-03-14T17:00:00Z",
+      "title": "اجتماع متابعة العميل",
+      "description": "مكالمة فيديو أسبوعية مع العميل لمناقشة التقدم والمشاكل",
+      "type": "التواصل مع العملاء والمتابعة",
+      "project": "PROJ-CONSULTING",
+      "status": "inProgress",
+      "assignedTo": "user",
+      "priority": "high",
+      "dueDate": "2026-03-03T14:00:00Z",
       "recurring": {
         "isRecurring": true,
-        "frequency": "monthly"
+        "frequency": "weekly",
+        "dayOfWeek": "Tuesday"
       },
-      "createdAt": "2026-03-02T09:30:00Z",
-      "updatedAt": "2026-03-02T09:30:00Z",
-      "notes": "Mix promotional, educational, and engagement content (60/20/20 split)",
-      "automationSuggestion": "✅ Can be automated: once created, schedule publishing via Buffer/Later every month"
+      "createdAt": "2026-03-02T10:40:00Z",
+      "updatedAt": "2026-03-02T10:40:00Z",
+      "notes": "احضر تقرير التقدم وقائمة المشاكل المعلقة"
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-03-02T09:30:00Z",
+    "lastUpdated": "2026-03-02T10:40:00Z",
     "totalTasks": 6,
+    "completedTasks": 0,
+    "inProgressTasks": 3,
+    "todoTasks": 3,
     "tasksByStatus": {
       "backlog": 2,
-      "inProgress": 2,
+      "inProgress": 3,
       "review": 1,
-      "done": 1
+      "done": 0
     },
     "tasksByAssignee": {
-      "user": 2,
-      "agent": 4
+      "user": 4,
+      "agent": 2
     },
     "tasksByPriority": {
-      "high": 4,
-      "medium": 2,
+      "high": 3,
+      "medium": 3,
       "low": 0
     },
     "recurringTasks": 3,
